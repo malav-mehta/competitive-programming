@@ -6,6 +6,15 @@ int main() {
     int mxN = -1, mnN = 10001;
     scanf("%d", &n);
     
+    if (n == 1) {
+        printf("0");
+        return 0;
+    }
+    
+    scanf("%d", &tmp);
+    mxN = tmp;
+    mnN = tmp;
+    
     while (n--) {
         scanf("%d", &tmp);
         if (tmp > mxN) {
@@ -13,12 +22,12 @@ int main() {
             ++ans;
         }
         
-        if (tmp > mnN) {
+        if (tmp < mnN) {
             mnN = tmp;
             ++ans;
         }
     }
     
-    printf("%d", ans);
+    printf("%d\n", ans);
     return 0;
 }
