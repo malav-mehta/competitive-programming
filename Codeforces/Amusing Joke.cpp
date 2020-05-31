@@ -5,10 +5,7 @@ using namespace std;
 
 long long hsh (string s) {
     long long ans = 0;
-    
-    for (char c : s)
-        ans += c - 'a' * pow(HASH, c - 'a');
-    
+    for (char c : s) ans += c - 'a' * pow(HASH, c - 'a');
     return ans;
 }
 
