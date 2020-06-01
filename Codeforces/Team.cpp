@@ -15,6 +15,6 @@ int main() {
         if (sum > 1) ++ans;
     }
     
-    printf("%d", ans);    
+    printf("%d", ans);
     return 0;
 }
