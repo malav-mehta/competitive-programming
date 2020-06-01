@@ -6,7 +6,7 @@ int main () {
     cin >> in;
     
     for (char c : in)
-        if (c == 'H' || c == 'Q' || c == '9' || c == '+') {
+        if (c == 'H' || c == 'Q' || c == '9') {
             printf("YES\n");
             return 0;
         }
