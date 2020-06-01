@@ -1,21 +1,28 @@
 #include <iostream>
-#include <cmath>
-#define HASH 13
+#include <cstring>
 using namespace std;
 
-long long hsh (string s) {
-    long long ans = 0;
-    for (char c : s) ans += c - 'a' * pow(HASH, c - 'a');
-    return ans;
-}
-
 int main() {
-    string a, b, c;
-    cin >> a >> b >> c;
-    long long prev = hsh(a) + hsh(b);
-    long long cur = hsh(c);
+    int chr[26];
+    memset(chr, 0, sizeof(chr));
     
-    if (prev == cur) printf("YES");
-    else printf("NO");
+    string a, b, fin;
+    cin >> a >> b >> fin;
+    
+    
+    for (char c : a)
+        ++chr[c - 'A'];
+    for (char c : b)
+        ++chr[c - 'A'];
+    for (char c : fin)
+        --chr[c - 'A'];
+    
+    for (int i = 0; i < 26; ++i)
+        if (chr[i]) {
+            printf("NO\n");
+            return 0;
+        }
+    
+    printf("YES\n");
     return 0;
 }
