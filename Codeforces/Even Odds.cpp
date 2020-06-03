@@ -7,16 +7,6 @@ typedef long long ll;
 int main() {
     ll n, k;
     cin >> n >> k;
-    
-    vector<int> nums;
-    nums.push_back(0);
-    
-    for (int i = 1; i <= n; i += 2)
-        nums.push_back(i);
-    
-    for (int i = 2; i <= n; i += 2)
-        nums.push_back(i);
-    
-    printf("%d", nums[k]);
+    cout << (k <= (n + 1) / 2 ? 2 * k - 1 : 2 * (k - (n + 1) / 2));
     return 0;
 }
