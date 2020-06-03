@@ -1,22 +1,21 @@
 #include <cstdio>
-#include <queue>
+#include <cmath>
+#include <climits>
 using namespace std;
 
 int main() {
-    int n, m, tmp;
+    int n, m, tmp, mxN = INT_MIN, mxI = 0;
     scanf("%d %d", &n, &m);
-    queue<int> line;
     
-    for (int i = 0; i < n; ++i) {
+    for (int i = 1; i <= n; ++i) {
         scanf("%d", &tmp);
-        line.push(tmp);
+        tmp = ceil((double) tmp / m);
+        if (tmp >= mxN) {
+            mxN = tmp;
+            mxI = i;
+        }
     }
     
-    while (!line.empty()) {
-        tmp = line.front();
-        line.pop();
-        
-    }
-    
+    printf("%d", mxI);
     return 0;
 }
