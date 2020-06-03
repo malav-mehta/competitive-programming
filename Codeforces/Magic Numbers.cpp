@@ -21,6 +21,9 @@ int main() {
         else cnt = 0;
     }
     
-    cout << "YES\n";
+    if (cnt < 3)
+        cout << "YES\n";
+    else
+        cout << "NO\n";
     return 0;
 }
