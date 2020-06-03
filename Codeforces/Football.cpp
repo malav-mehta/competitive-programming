@@ -16,7 +16,6 @@ int main() {
             ++mp[tmp];
     }
     
-    
     map<string, int>::iterator it;
     int mxN = 0;
     string winner;
