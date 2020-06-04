@@ -31,6 +31,6 @@ int main() {
             }
         }
     
-    printf("%d", ratios[mxN]);    
+    printf("%d", ratios[mxN]);
     return 0;
 }
