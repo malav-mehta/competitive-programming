@@ -23,9 +23,8 @@ int main() {
     }
     
     for (auto it : mp)
-        sort(it.second.rbegin(), it.second.rend());
+        sort(it.second.rbegin(), it.second.rend());
 
-    
     for (auto it : mp) {
         int x = it.first;
         for (int i = 0; i < it.second.size(); ++i) {
