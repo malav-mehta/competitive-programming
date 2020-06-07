@@ -25,6 +25,7 @@ int main() {
         }
     }
     
+    // TODO: Optimize this (current is AC though)
     while (n--) {
         sort(a.rbegin(), a.rend());
         max += a[0]--;
