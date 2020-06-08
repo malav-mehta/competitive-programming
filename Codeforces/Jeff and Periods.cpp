@@ -21,7 +21,7 @@ int main() {
         a[x].push_back(i);
     }
     
-    vector<pair<ll, ll>> ans;
+    vector<pair<ll, ll> > ans;
     for (auto it : a) {
         x = it.first;
         if (a[x].size() == 1)
