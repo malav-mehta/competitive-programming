@@ -12,7 +12,9 @@ int main() {
     for (int i = 0; i < n; ++i)
         cin >> a[i];
     
-    int ans(n - 1), t(a[k -1 ]);
+    int ans(n - 1);
+    int t(a[k - 1]);
+    
     for (int i = n - 1; i >= 0; --i) {
         if (a[i] == t) ans = i;
         else break;
