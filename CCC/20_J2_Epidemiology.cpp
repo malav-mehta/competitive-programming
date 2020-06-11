@@ -5,12 +5,12 @@ int main() {
     cin.sync_with_stdio(0);
     cin.tie(0);
     
-    int p, n, r, pn(0), ans(0);
+    int p, n, r, x(0), ans(0);
     cin >> p >> n >> r;
     
-    while (n + pn <= p) {
+    while (n + x <= p) {
         ++ans;
-        pn += n;
+        x += n;
         n *= r;
     }
     
