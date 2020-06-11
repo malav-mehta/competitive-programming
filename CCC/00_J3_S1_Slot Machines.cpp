@@ -23,3 +23,4 @@ int main() {
     cout << "Martha plays " << ans << " times before going broke.";
     return 0;
 }
+clearerr_unlocked(<#p#>)
