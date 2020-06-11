@@ -16,12 +16,11 @@ int main() {
     for (int i = 0; i < lnS; ++i)
         cyc.insert(s.substr(i) + s.substr(0, i));
     
-    for (int i = 0; i <= lnT - lnS; ++i) {
+    for (int i = 0; i <= lnT - lnS; ++i)
         if (cyc.find(t.substr(i, lnS)) != cyc.end()) {
             cout << "yes";
             return 0;
         }
-    }
     
     cout << "no";
     return 0;
