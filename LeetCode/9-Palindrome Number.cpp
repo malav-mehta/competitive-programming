@@ -8,7 +8,7 @@ public:
         string num = to_string(x);
         string rev;
         
-        for (int i = num.size() - 1; i >= 0; --i)
+        for (size_t i = num.size() - 1; i >= 0; --i)
             rev += num[i];
         
         return num == rev;
