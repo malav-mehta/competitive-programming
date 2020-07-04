@@ -13,8 +13,8 @@ This folder contains all of the solutions I’ve written for problems on LeetCod
 
 This file only shows the problems that I’ve fully completed. I’m not aiming for the lowest runtime, but I’ve tried my best to find a solution with an optimal time and space complexity.
 
-
-
+<center>
 |#|Problem Name|Difficulty|Completed?|Runtime|
 |---|---|---|---|---|
 |1|Two Sum|Easy|✅|34|
+</center>
