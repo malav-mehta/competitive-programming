@@ -7,8 +7,6 @@
   <img alt="solved question count hard" src="https://img.shields.io/badge/hard-1-red">
 </p>
 
-
-
 This folder contains all of the solutions I’ve written for problems on LeetCode. Solutions to problems from contests and monthly challenges are in their respective folders. The purpose of this folder is to track my progress, learn C++ and improve my knowledge on algorithms through practice. My LeetCode profile is: [leetcode.com/malav-mehta](https://leetcode.com/malav-mehta/). If you have any questions, feel free to contact me at [malavhmehta@icloud.com](mailto:malavhmehta@icloud.com).
 
 This file only shows the problems that I’ve fully completed. I’m not aiming for the lowest runtime, but I’ve tried my best to find a solution with an optimal time and space complexity.
