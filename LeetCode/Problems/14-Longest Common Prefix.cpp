@@ -14,7 +14,7 @@ public:
         3) Iteration is continued until there is an uncommon character in the
         prefix. At that point, break out of the loops.
         
-        Time complexity: O(Sn) (worst case S=n, O(n^2))
+        Time complexity: O(Sn)
         Space complexity: O(1)
         */
         
