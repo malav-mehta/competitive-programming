@@ -6,9 +6,11 @@ public:
         /*
         1) Iterate through the string to check for opening parentheses, and
         push the corresponding closing parenthese to the stack.
+        
         2) If the current character is not an opening parenthese, and it does
         not match the closing parenthesese at the top of the stack, then the
         structure is not valid.
+        
         3) At the end, the stack should be empty.
         
         Time complexity: O(n)
