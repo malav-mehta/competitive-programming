@@ -1,16 +1,30 @@
-#include <iostream>
-#include <string>
-using namespace std;
+/* 9. Palindrome Number, 8 ms */
 
 class Solution {
 public:
     bool isPalindrome(int x) {
-        string num = to_string(x);
-        string rev;
+        /*
+        Directly false if the number is negative (leading `-` sign) or if the number
+        has trailing zeroes (there are no leading zeroes).
         
-        for (size_t i = num.size() - 1; i >= 0; --i)
-            rev += num[i];
+        Otherwise, construct the half reversed number iteratively — take the last half
+        of the number and compare it to the first half. If they are equal, return true.
         
-        return num == rev;
+        Time complexity: O(logn)
+        Space complexity: O(n)
+        */
+        
+        if (x < 0 || (x % 10 == 0 && x != 0)) {
+            return false;
+        }
+        
+        int rev = 0;
+        
+        while (x > rev) {
+            rev = rev * 10 + x % 10;
+            x /= 10;
+        }
+        
+        return x == rev || x == rev / 10;
     }
 };
