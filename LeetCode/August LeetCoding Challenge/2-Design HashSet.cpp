@@ -3,9 +3,7 @@ public:
     /** Initialize your data structure here. */
     vector<int> v = vector<int>(1000001);
 
-    MyHashSet() {
-
-    }
+    MyHashSet() {}
 
     void add(int key) {
         v[key] = 1;
