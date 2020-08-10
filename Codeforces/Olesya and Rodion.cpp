@@ -6,8 +6,9 @@ int main() {
     cin >> n >> t;
 
     if (t != 10) {
-        for (int i = 0; i < n; ++i)
+        for (int i = 0; i < n; ++i) {
             cout << t;
+        }
 
         return  0;
     }
