@@ -37,6 +37,10 @@ int main()
         return 0;
       }
     }
+    else
+    {
+      printf("You are now on square %d\n", p);
+    }
   }
 
   printf("You Quit!");
